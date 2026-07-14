@@ -10,4 +10,6 @@ public class FishData : ScriptableObject
     public int xpReward;
     public int coinReward;
     public Sprite sprite;
+    [TextArea] public string description;
+    public Sprite locationSprite;
 }

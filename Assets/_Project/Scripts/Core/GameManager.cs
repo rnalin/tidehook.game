@@ -8,9 +8,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] CurrencySystem currencySystem;
     [SerializeField] FishingController fishingController;
     [SerializeField] HouseController houseController;
+    [SerializeField] InventorySystem inventorySystem;
 
     public XPSystem XP => xpSystem;
     public CurrencySystem Currency => currencySystem;
+    public InventorySystem Inventory => inventorySystem;
 
     SaveData saveData;
 
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         xpSystem.Initialize(saveData);
         currencySystem.Initialize(saveData);
         houseController.Initialize(saveData);
+        inventorySystem.Initialize(saveData);
         fishingController.SetActiveBait(saveData.activeBaitIndex);
     }
 
@@ -33,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         xpSystem.AddXP(fish.xpReward);
         currencySystem.AddCoins(fish.coinReward);
+        inventorySystem.AddFish(fish);
     }
 
     void OnApplicationPause(bool paused) { if (paused) Save(); }
@@ -43,6 +47,7 @@ public class GameManager : MonoBehaviour
         xpSystem.WriteTo(saveData);
         currencySystem.WriteTo(saveData);
         houseController.WriteTo(saveData);
+        inventorySystem.WriteTo(saveData);
         saveData.activeBaitIndex = fishingController.ActiveBaitIndex;
         SaveSystem.Save(saveData);
     }

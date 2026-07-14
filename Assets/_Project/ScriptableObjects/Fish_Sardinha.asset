@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a40479bae068749812b894dbbb0023, type: 3}
+  m_Name: Fish_Sardinha
+  m_EditorClassIdentifier: Assembly-CSharp::FishData
+  fishName: Sardinha
+  rarity: 1
+  xpReward: 10
+  coinReward: 15
+  sprite: {fileID: -8428649140907116804, guid: c3ba5aee0fff5874996dd2a1a9575138, type: 3}

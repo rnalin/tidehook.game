@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a40479bae068749812b894dbbb0023, type: 3}
+  m_Name: Fish_Peixinho
+  m_EditorClassIdentifier: Assembly-CSharp::FishData
+  fishName: Peixinho
+  rarity: 0
+  xpReward: 5
+  coinReward: 5
+  sprite: {fileID: -2696121087121478041, guid: c0090df931c17914985232e1c33a973b, type: 3}

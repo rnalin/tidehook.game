@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da96b47472f8fb48b62d84fbf42a5a2, type: 3}
+  m_Name: Bait_Minhoca
+  m_EditorClassIdentifier: Assembly-CSharp::BaitData
+  baitName: Isca Minhoca
+  unlockLevel: 2
+  sprite: {fileID: 3888027960894415127, guid: 2688f3fecf3fc6e4e8b77d7c38e92383, type: 3}
+  dropTable:
+  - fish: {fileID: 11400000, guid: 581ac6259c0483949adf021383fa8c5d, type: 2}
+    weight: 42
+  - fish: {fileID: 11400000, guid: cc3614ff3c8592d41b645bf17f7c3a46, type: 2}
+    weight: 40
+  - fish: {fileID: 11400000, guid: 6d9292e905577e54ab79d653f3a939e8, type: 2}
+    weight: 18

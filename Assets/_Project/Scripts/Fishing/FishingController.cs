@@ -46,11 +46,11 @@ public class FishingController : MonoBehaviour
                 yield return null;
             }
 
-            isWindowActive = false;
-            OnFishingWindowClose?.Invoke();
-
             if (!playerClickedThisCycle)
                 CatchFish();
+
+            isWindowActive = false;
+            OnFishingWindowClose?.Invoke();
 
             playerClickedThisCycle = false;
         }

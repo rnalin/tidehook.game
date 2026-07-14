@@ -24,5 +24,6 @@ public class SaveData
     public int xp = 0;
     public int level = 1;
     public int activeBaitIndex = 0;
-    public int[] purchasedTiers = new int[0];
+    public int[] purchasedTiers = new[] { 0 };
+    public int[] fishCounts;
 }
